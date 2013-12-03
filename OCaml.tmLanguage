@@ -1127,13 +1127,18 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(for)\b</string>
+			<string>\b(for)\b|\b(for_lwt)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.control.for-loop.ocaml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.for-loop.ocaml.extension.lwt</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -1164,13 +1169,18 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(while)\b</string>
+			<string>\b(while)\b|\b(while_lwt)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.control.while-loop.ocaml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.while-loop.ocaml.extension.lwt</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -1231,6 +1241,18 @@
 			<string>\b(as|assert|class|constraint|exception|functor|in|include|inherit!?|initializer|lazy|let|mod|module|mutable|new|object|open!?|private|rec|sig|struct|type|virtual)\b</string>
 			<key>name</key>
 			<string>keyword.other.ocaml</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(match_lwt|try_lwt)\b</string>
+			<key>name</key>
+			<string>keyword.control.ocaml.extension.lwt</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(assert_lwt|lwt)\b</string>
+			<key>name</key>
+			<string>keyword.other.ocaml.extension.lwt</string>
 		</dict>
 		<dict>
 			<key>include</key>
