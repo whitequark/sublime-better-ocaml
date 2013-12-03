@@ -285,6 +285,47 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>^[ \t]*(class)(?:\s+(?!(?:virtual)\s+))((\[\s*('[A-Za-z][a-zA-Z0-9_']*(?:\s*,\s*'[A-Za-z][a-zA-Z0-9_']*)*)\s*\]\s+)?[a-z_][a-zA-Z0-9'_]*)\s*:</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.class-signature.ocaml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.class.ocaml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.ocaml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(->)|(?=object)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.ocaml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.class.ocaml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variables</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>^[ \t]*(class)(?:\s+(?!(?:virtual)\s+))((\[\s*('[A-Za-z][a-zA-Z0-9_']*(?:\s*,\s*'[A-Za-z][a-zA-Z0-9_']*)*)\s*\]\s+)?[a-z_][a-zA-Z0-9'_]*)</string>
 			<key>beginCaptures</key>
 			<dict>
@@ -316,6 +357,47 @@
 			</dict>
 			<key>name</key>
 			<string>meta.class.ocaml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variables</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^[ \t]*(class\s+virtual\s+)((\[\s*('[A-Za-z][a-zA-Z0-9_']*(?:\s*,\s*'[A-Za-z][a-zA-Z0-9_']*)*)\s*\]\s+)?[a-z_][a-zA-Z0-9'_]*)\s*:</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.class-definition.ocaml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.class.ocaml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.ocaml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(->)|(?=object)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.ocaml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.class.virtual.ocaml</string>
 			<key>patterns</key>
 			<array>
 				<dict>
