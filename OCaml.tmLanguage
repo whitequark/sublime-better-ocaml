@@ -1228,7 +1228,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(as|assert|class|constraint|exception|functor|in|include|inherit|initializer|lazy|let|mod|module|mutable|new|object|open|private|rec|sig|struct|type|virtual)\b</string>
+			<string>\b(as|assert|class|constraint|exception|functor|in|include|inherit!?|initializer|lazy|let|mod|module|mutable|new|object|open!?|private|rec|sig|struct|type|virtual)\b</string>
 			<key>name</key>
 			<string>keyword.other.ocaml</string>
 		</dict>
@@ -1544,7 +1544,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(val)(\s+mutable)?\s+([a-z_][a-zA-Z0-9_']*)\s*(:)</string>
+					<string>(val!?)(\s+mutable)?\s+([a-z_][a-zA-Z0-9_']*)\s*(:)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
