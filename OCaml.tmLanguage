@@ -1544,7 +1544,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(val)\s+([a-z_][a-zA-Z0-9_']*)\s*(:)</string>
+					<string>(val)(\s+mutable)?\s+([a-z_][a-zA-Z0-9_']*)\s*(:)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1555,16 +1555,21 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.type.value-signature.ocaml</string>
+							<string>keyword.other.storage.modifier.ocaml</string>
 						</dict>
 						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.type.value-signature.ocaml</string>
+						</dict>
+						<key>4</key>
 						<dict>
 							<key>name</key>
 							<string>punctuation.separator.type-constraint.ocaml</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=\b(type|val|external|class|module|end)\b)|^\s*$</string>
+					<string>(?=\b(type|val|external|class|module|end)\b)|^\s*$|=</string>
 					<key>name</key>
 					<string>meta.module.signature.val.ocaml</string>
 					<key>patterns</key>
