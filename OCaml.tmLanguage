@@ -47,6 +47,30 @@
 			<string>meta.module.binding</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\b(let\s+open)\s+([A-Z][a-zA-Z0-9'_]*(?:\s*.[A-Z][a-zA-Z0-9'_]*)*)\s*(in)</string>
+			<key>name</key>
+			<string>meta.module.open</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.module-open.ocaml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.other.module.ocaml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.module-binding.ocmal</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\b(let|and)\s+(?!\(\*)((rec\s+)([a-z_][a-zA-Z0-9_']*)\b|([a-z_][a-zA-Z0-9_']*|\([^)]+\))(?=\s)((?=\s*=\s*(?=fun(?:ction)\b))|(?!\s*=)))</string>
 			<key>beginCaptures</key>
