@@ -472,6 +472,25 @@
 			<string>meta.class.virtual.type-definition.ocaml</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>(new)\s+([a-z_][a-zA-Z0-9_']*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.ocaml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.class.ocaml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.object.instantiation.ocaml</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>(\{)</string>
 			<key>beginCaptures</key>
