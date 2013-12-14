@@ -1114,7 +1114,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>~[a-z][a-z0-9'_]*(:)?</string>
+			<string>[~?][a-z][a-z0-9'_]*(:)?</string>
 			<key>name</key>
 			<string>entity.name.tag.label.ocaml</string>
 		</dict>
