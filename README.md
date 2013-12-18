@@ -17,6 +17,7 @@ Features
 
 * Fixed highlighting of object-oriented code,
 * Added missing keywords and combinations: `inherit!`, `val mutable` and others,
-* Added support for keywords added by [Pa_lwt][] syntax extension.
+* Added support for keywords added by [Pa_lwt][] syntax extension,
+* Added support for locally abstract types (`let foo (type a) (bar : a) = ...`).
 
 [Pa_lwt]: http://ocsigen.org/lwt/api/Pa_lwt
