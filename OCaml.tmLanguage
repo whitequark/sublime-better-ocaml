@@ -1024,7 +1024,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^[ \t]*#[0-9]*</string>
+			<string>^[ \t]*#[0-9]+</string>
 			<key>name</key>
 			<string>keyword.other.directive.line-number.ocaml</string>
 		</dict>
