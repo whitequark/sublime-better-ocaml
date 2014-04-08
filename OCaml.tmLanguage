@@ -42,7 +42,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(let)\s+(module)\s+([A-Z][a-zA-Z0-9'_]*)\s*(=)</string>
+			<string>\b(let)\s+(module|open)\s+([A-Z][a-zA-Z0-9'_]*)\s*(=)</string>
 			<key>name</key>
 			<string>meta.module.binding</string>
 		</dict>
