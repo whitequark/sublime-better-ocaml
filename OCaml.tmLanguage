@@ -1250,7 +1250,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(and|land|lor|lsl|lsr|lxor|mod|or)\b</string>
+			<string>\b(and|land|lor|lsl|lsr|asr|lxor|mod|or)\b</string>
 			<key>name</key>
 			<string>keyword.operator.ocaml</string>
 		</dict>
