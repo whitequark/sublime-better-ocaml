@@ -2293,7 +2293,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\btype\s*[a-z_][a-zA-Z0-9]*</string>
+					<string>\btype\s+[a-z_][a-zA-Z0-9]*</string>
 					<key>name</key>
 					<string>storage.type.ocaml</string>
 				</dict>
