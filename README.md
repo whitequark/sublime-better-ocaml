@@ -7,10 +7,8 @@ shortcomings.
 Installation
 ------------
 
-1. Install Package Control. http://wbond.net/sublime_packages/package_control
-2. Install Better OCaml
-  1. Preferences | Package Control | Package Control: Install Package
-  2. Choose OCaml
+1. Navigate to the Packages folder (Preferences → Browse Packages...)
+2. Unzip [the ZIP archive of Better OCaml](https://github.com/whitequark/sublime-better-ocaml/archive/master.zip). Or, use `git clone git://github.com/whitequark/sublime-better-ocaml`, so that you could use `git pull` to update.
 
 Features
 --------
