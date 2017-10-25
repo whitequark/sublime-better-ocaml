@@ -133,7 +133,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=(\(|\s))(fun)\s</string>
+			<string>(?&lt;=(\W))(fun)\s</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>2</key>
