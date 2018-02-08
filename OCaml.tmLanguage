@@ -72,7 +72,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(let|and)\s+(?!\(\*)((rec\s+)([a-z_][a-zA-Z0-9_']*)\b|([a-z_][a-zA-Z0-9_']*|\([^)]+\))(?=\s)((?=\s*=\s*(?=fun(?:ction)\b))|(?!\s*=)))</string>
+			<string>\b(let|and)\s+(?!\(\*)((rec\s+)([a-z_][a-zA-Z0-9_']*)\b|([a-z_][a-zA-Z0-9_']*|\([^)]+\))(?=\s)((?=\s*=\s*(?=fun\b))|(?!\s*=)))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1595,7 +1595,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(val!?)(\s+mutable)?\s+([a-z_][a-zA-Z0-9_']*|\([=&lt;&gt;@^&amp;+\-*/$%|][|!$%&amp;*+./:&lt;=&gt;?@^~-]*\))\s*(:)</string>
+					<string>(val!?)(\s+mutable)?\s+([a-z_][a-zA-Z0-9_']*|\([=&lt;&gt;@^&amp;+\-*/$%|][|!$%&amp;*+./:&lt;=&gt;?@^~-]*\))\s*(:?)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
